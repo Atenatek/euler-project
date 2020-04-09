@@ -22,8 +22,6 @@ def fibo(n):
         a = b
         b = c
         fibolist.append(a)
-    else:
-        pass
     return fibolist
 
 
