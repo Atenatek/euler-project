@@ -19,7 +19,7 @@ def square_sum(num):
     #ex : square_sum(3) return sum(1**2+2**2+3**2) = 14
     #input & output type : int
     sq_list = []
-    for n in range(1, num + 1):
+    for n in range(num + 1):
         sq_list.append(n**2)
     return sum(sq_list)
 
