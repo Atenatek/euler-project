@@ -58,7 +58,7 @@ def greatest_product(x):
     prod = 1
     prod_max = 1
     i = 0
-    while i < (len(n) - x + 1):
+    while i <= (len(n) - x):
         for d in range(i, i + x):
             prod = prod * int(n[d])
         if prod_max < prod:
