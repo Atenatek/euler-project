@@ -35,16 +35,16 @@ def greatest_product(x):
     # (9 * 9 * 8 * 9 = 5832 and 9, 9, 8 and 9 are 4 adjacent digits)
     
     prod = 1
-    prod_max = 1
+    max_prod = 1
     i = 0
     while i <= (len(n) - x):
         for d in range(i, i + x):
             prod = prod * int(n[d])
-        if prod_max < prod:
-            prod_max = prod
+        if max_prod < prod:
+            max_prod = prod
         i += 1
         prod = 1
-    return prod_max
+    return max_prod
 
 print(greatest_product(13))
 
