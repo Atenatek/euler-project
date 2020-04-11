@@ -6,6 +6,7 @@
 
 #What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
+import time
 import math
 
 def is_prime(n):
@@ -18,7 +19,7 @@ def is_prime(n):
 
 def divisible_by_all(result, value):
 
-    for n in range(2, value + 1):
+    for n in range(value // 2, value + 1):
         if result % n != 0:
             return False
     return True
@@ -35,4 +36,9 @@ def try_to_divide(value):
     else:
         print(res)
 
+start_time = time.time()
+
 try_to_divide(20)
+
+
+print("--- %s seconds ---" % (time.time() - start_time))
