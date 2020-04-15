@@ -15,7 +15,7 @@ start_time = time.time()
 
 
 def pythagorean_triplet(sum):
-    # return a pythagorean triplet (a, b, c when a**2 + b**2 == c**2)
+    # return a pythagorean triplet product (a*b*c when a**2 + b**2 == c**2)
     # for witch a + b + c == sum
     # ex : pythagorean_triplet(12) return 3, 4, 5 
     
@@ -23,7 +23,7 @@ def pythagorean_triplet(sum):
         for b in range(a, sum//2):
             for c in range(b, sum//2):
                 if a**2 + b**2 == c**2 and (a + b + c) == sum:
-                    print(a, b, c)
+                    print(a * b * c)
 
 pythagorean_triplet(1000)
 
