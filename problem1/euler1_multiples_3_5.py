@@ -11,7 +11,7 @@ def multiples(r, *n):
     #Function returns a list of multiples of numbers in a given range.
     # r : range
     # *n : multiples
-    #type n1, n2, r : int
+    # type *n, r : int
     # return a list of the multiples of *n in range(r)
     #     example : multiples(10, 3, 5) return [3, 5, 6, 9]
 
@@ -24,4 +24,4 @@ def multiples(r, *n):
                 continue
     return l
 
-print(sum(multiples(100, 3, 5)))
+print(sum(multiples(1000, 3, 5)))
